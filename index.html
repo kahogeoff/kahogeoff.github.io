@@ -2,21 +2,27 @@
 <html>
 	<head>
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="https://raw.githubusercontent.com/peachananr/onepage-scroll/master/jquery.onepage-scroll.min.js"></script>
-		<link rel="stylesheet" href="https://raw.githubusercontent.com/peachananr/onepage-scroll/master/onepage-scroll.css">
+		<script src="js/jquery.onepage-scroll.min.js"></script>
+		<link rel="stylesheet" href="css/onepage-scroll.css">
 	</head>
 	<body>
 		<div class='main'>
 			<section class='page1'>
-				<h1>Sorry, working in process.</h1>
-				<p>This site is still under construction.</p>
 			</section>
 			<section class='page2'>
 				<h1>Testing</h1>
 			</section>
 		</div>
 		<script>
-			$(".main").onepage_scroll();
+		$(document).ready(function() {
+			$(".main").onepage_scroll({
+			 sectionContainer: "section",
+			 easing: "ease",
+			 animationTime: 1000,
+			 pagination: true,
+			 updateURL: false
+			});
+		});
 		</script>
 	</body>
 </html>
