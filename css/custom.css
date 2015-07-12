@@ -8,7 +8,3 @@ body {
   background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 );
 }
-
-#center {
-    position:absolute; height:400px; top:50%; margin-top:-200px; /* div高度的一半 */
-}
