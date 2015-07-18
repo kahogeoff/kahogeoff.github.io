@@ -35,13 +35,21 @@
 							<th>Email</th>
 							<td><a href="mailto:kahogeoff@gmail.com">kahogeoff@gmail.com</a></td>
 						</tr>
+						<tr>
+							<th>Some buttons</th>
+							<td>
+								<!-- Place this tag where you want the button to render. -->
+								<a aria-label="Follow @kahogeoff on GitHub" href="https://github.com/kahogeoff" class="github-button">Follow @kahogeoff</a>
+							</td>
+							<td></td>
+						</tr>
 					</table>
 				</div>
 			</section>
 		</div>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="js/jquery.onepage-scroll.min.js"></script>
-		<script>
+		<script async>
 		$(document).ready(function() {
 			$(".main").onepage_scroll({
 			 sectionContainer: "section",
@@ -55,5 +63,7 @@
 			});
 		});
 		</script>
+		<!-- Place this tag right after the last button or just before your close body tag. -->
+		<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 	</body>
 </html>
