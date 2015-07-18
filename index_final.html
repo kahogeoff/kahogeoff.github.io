@@ -16,7 +16,7 @@
 						<h1>Hello~!</h1>
 						<h1>And welcome to my website~!</h1>
 						<br/>
-						<p><a class="btn btn-default btn-lg" href="#">About me</a></p>
+						<p><a class="btn btn-default btn-lg" id='move_about' href="#">About me</a></p>
 					</div>
 				</div>
 			</section>
@@ -50,6 +50,9 @@
 			 pagination: true,
 			 updateURL: false
 			});
+		});
+		$("#move_about").on('click',{
+			$(".main").moveTo(1);
 		});
 		</script>
 	</body>
