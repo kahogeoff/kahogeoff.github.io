@@ -1,6 +1,5 @@
-.vertical-center {
-  margin-top: 100%;
-  margin-bottom: 100%;
-
-  display: flex;
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
