@@ -1,5 +1,11 @@
+.parent-vcenter {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .vcenter {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
