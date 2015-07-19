@@ -1,42 +1,206 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<link rel="stylesheet" href="css/onepage-scroll.css">
-		<link rel="stylesheet" href="css/custom.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<title>Geoffrey's Website</title>
-	</head>
-	<body>
-		<div class='main'>
-			<section class='index container-fluid'>
-				<div class="vcenter" align="center">
-					<div>
-						<h1>Sorry, working in process.</h1>
-						<p>This site is still under construction.</p>
-						<p>DO NOT SCROLL DOWN!!!!</p>
-					</div>
+
+<head>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="css/onepage-scroll.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+	<title>Geoffrey's Website</title>
+</head>
+
+<body>
+	<div class="main">
+		<section class="page_index container-fluid">
+			<div class="vcenter" align="center">
+				<div>
+					<h1>Hello~!</h1>
+					<h1>And welcome to my website~!</h1>
+					<br/>
+					<p>
+						<a class="btn btn-default btn-lg" id="move_about" href="#">About me</a>
+						<a class="btn btn-default btn-lg" id="move_works" href="#">My works</a>
+					</p>
 				</div>
-			</section>
-			<section class='test'>
-				<div class="vcenter" align="center">
-					<img src="http://assets.diylol.com/hfs/714/a21/4ea/resized/forever-alone-meme-generator-fourever-404-f0830b.jpg" height=100%></img>
-				</div>
-			</section>
-		</div>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="js/jquery.onepage-scroll.min.js"></script>
-		<script>
-		$(document).ready(function() {
-			$(".main").onepage_scroll({
-			 sectionContainer: "section",
-			 easing: "ease",
-			 animationTime: 1000,
-			 pagination: true,
-			 updateURL: false
-			});
-		});
-		</script>
-	</body>
+			</div>
+		</section>
+
+		<section class="page_about_me container-fluid">
+			<div class="vcenter" align="center">
+
+				<table class="table" style="width:60%">
+					<tr>
+						<th colspan="2" align="center">
+							<h2>About me</h2>
+						</th>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<img src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1908132_10152750688287385_2987088161921102466_n.jpg?oh=96e075da319e9ff3f0aa7b46ab83e197&oe=564B97B4" class="img-circle" width="256" height="256" />
+						</td>
+					</tr>
+					<tr>
+						<th>Name</th>
+						<td>Geoffrey Cheung</td>
+					</tr>
+					<tr>
+						<th>Intro.</th>
+						<td>Just a guy who want to make video games. :\</td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td><a href="mailto:kahogeoff@gmail.com">kahogeoff@gmail.com</a></td>
+					</tr>
+					<tr>
+						<th>Some buttons</th>
+						<td>
+							<!-- Place this tag where you want the button to render. -->
+							<a aria-label="Follow @kahogeoff on GitHub" href="https://github.com/kahogeoff" class="github-button">Follow @kahogeoff</a>
+
+							<a href="https://twitter.com/KaHo4321" class="twitter-follow-button" data-show-count="false">Follow @KaHo4321</a>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<section class="page_my_works container-fluid">
+			<div class="vcenter" align="center">
+				<table style="width:60%;">
+					<tr>
+						<th align="center">
+							<h2>My works</h2>
+						</th>
+					</tr>
+					<tr>
+						<td>
+
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<!-- Application info START -->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingApp">
+										<h4 class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApp" aria-expanded="true" aria-controls="collapseApp">
+								          Application Software
+								        </a>
+										</h4>
+									</div>
+									<div id="collapseApp" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingApp">
+										<div class="panel-body container-fluid">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>Name</th>
+														<th>Describe</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><a href="https://github.com/kahogeoff/Repeated-Remover">Repeated Remover</a></td>
+														<td>A small program that can help you remove the repeated files</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- Application info END -->
+
+								<!-- Web info START -->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingWeb">
+										<h4 class="panel-title">
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWeb" aria-expanded="false" aria-controls="collapseWeb">
+								          Website/Web Application
+								        </a>
+										</h4>
+									</div>
+									<div id="collapseWeb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWeb">
+										<div class="panel-body container-fluid">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>Name</th>
+														<th>Describe</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><a href="https://github.com/kahogeoff/G-Chatroom">G-Chatroom</a></td>
+														<td>A simple anonymous chatroom written in Javascript, using Node.js with MongoDB.</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><a href="http://airsoft.yuntech.edu.tw/">NYUST Airsoft Club</a></td>
+														<td>The offical website of NYUST Airsoft Club</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- Web info END -->
+
+								<!-- Game info START -->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingGame">
+										<h4 class="panel-title">
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseGame" aria-expanded="false" aria-controls="collapseThree">
+								          Game
+								        </a>
+										</h4>
+									</div>
+									<div id="collapseGame" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingGame">
+										<div class="panel-body container-fluid">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>Name</th>
+														<th>Describe</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" align="center">Nothing now.</th>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- Game info END -->
+							</div>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script async src="js/main.js"></script>
+	<!-- Place this tag right after the last button or just before your close body tag. -->
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+	<script>
+		! function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+				p = /^http:/.test(d.location) ? 'http' : 'https';
+			if (!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = p + '://platform.twitter.com/widgets.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		}(document, 'script', 'twitter-wjs');
+	</script>
+</body>
+
 </html>
