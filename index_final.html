@@ -33,7 +33,7 @@
 					<tr>
 						<th colspan="2" align="center">
 							<h2>About me</h2>
-							</td>
+						</th>
 					</tr>
 					<tr>
 						<td colspan="2" align="center">
@@ -68,65 +68,74 @@
 
 		<section class="page_my_works container-fluid">
 			<div class="vcenter" align="center">
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width:50%;">
-					<div class="page-header" align="left">
-						<h2>My works</h2>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingApp">
-							<h4 class="panel-title">
-								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApp" aria-expanded="true" aria-controls="collapseApp">
-					          Application Software
-					        </a>
-							</h4>
-						</div>
-						<div id="collapseApp" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingApp">
-							<div class="panel-body">
-								<table class="table">
-									<tr>
-										<th>#</th>
-										<th>Name</th>
-										<th>Describe</th>
-									</tr>
-									<tr>
-										<th>1</th>
-										<td><a href="https://github.com/kahogeoff/Repeated-Remover">Repeated Remover</a></td>
-										<td></td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingWeb">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWeb" aria-expanded="false" aria-controls="collapseWeb">
-					          Website/Web Application
-					        </a>
-							</h4>
-						</div>
-						<div id="collapseWeb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWeb">
-							<div class="panel-body">
+				<table style="width:50%;">
+					<tr>
+						<th align="center">
+							<h2>My works</h2>
+						</th>
+					</tr>
+					<tr>
+						<td>
+							
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingApp">
+										<h4 class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseApp" aria-expanded="true" aria-controls="collapseApp">
+								          Application Software
+								        </a>
+										</h4>
+									</div>
+									<div id="collapseApp" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingApp">
+										<div class="panel-body">
+											<table class="table">
+												<tr>
+													<th>#</th>
+													<th>Name</th>
+													<th>Describe</th>
+												</tr>
+												<tr>
+													<th>1</th>
+													<td><a href="https://github.com/kahogeoff/Repeated-Remover">Repeated Remover</a></td>
+													<td></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingWeb">
+										<h4 class="panel-title">
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWeb" aria-expanded="false" aria-controls="collapseWeb">
+								          Website/Web Application
+								        </a>
+										</h4>
+									</div>
+									<div id="collapseWeb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWeb">
+										<div class="panel-body">
 
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingGame">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseGame" aria-expanded="false" aria-controls="collapseThree">
-					          Game
-					        </a>
-							</h4>
-						</div>
-						<div id="collapseGame" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingGame">
-							<div class="panel-body">
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingGame">
+										<h4 class="panel-title">
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseGame" aria-expanded="false" aria-controls="collapseThree">
+								          Game
+								        </a>
+										</h4>
+									</div>
+									<div id="collapseGame" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingGame">
+										<div class="panel-body">
 
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 
+						</td>
+					</tr>
+				</table>
 			</div>
 		</section>
 	</div>
@@ -143,6 +152,9 @@
 			});
 			$("#move_about").on("click", function() {
 				$(".main").moveTo(2);
+			});
+			$("#move_works").on("click", function() {
+				$(".main").moveTo(3);
 			});
 		});
 	</script>
