@@ -2,22 +2,23 @@
 <html>
 <body>
 
-
-! "Content Farm Blocker" block list for Adblock<br/>
-! Origin list from: https://github.com/benlau/ihatecontentfarms By benlau<br/>
-! I don't create this list, just organize it.<br/>
-! ------------------------------------------------------------------------<br/>
-! Title: "Content Farm Blocker" block list<br/>
-! Save this page to a .txt file to use it<br/>
-!<br/>
-<span id="list"></span>
+<span id="list">
+! "Content Farm Blocker" block list for Adblock\n
+! Origin list from: https://github.com/benlau/ihatecontentfarms By benlau\n
+! I don't create this list, just organize it.\n
+! ------------------------------------------------------------------------\n
+! Title: "Content Farm Blocker" block list\n
+! Save this page to a .txt file to use it\n
+!
+</span>
 
 <script src="https://raw.githubusercontent.com/benlau/ihatecontentfarms/master/chrome/sites.js"></script>
 <script>
 demoP = document.getElementById("list");
 sites.forEach(getList);
+demoP.innerHTML = "<plaintext>" + demoP.innerHTML;
 function getList(item, index) {
-    demoP.innerHTML = demoP.innerHTML + item + "<br />"; 
+    demoP.innerHTML = demoP.innerHTML + item + "\n"; 
     }
 </script>
 
